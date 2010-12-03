@@ -11,3 +11,4 @@ spec/generator.log
 .rvmrc
 .bundle
 .DS_Store
+tmp
