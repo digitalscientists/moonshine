@@ -257,7 +257,7 @@
   # Use this option to specify the default RAILS_ENV value. The default
   # setting is production.
 
-  RailsEnv <%= Rails.env || 'production' %>
+  RailsEnv <%= configuration[:passenger][:rails_env] || ENV['RAILS_ENV'] || 'production' %>
 <% end %>
 
   ## RailsSpawnMethod
