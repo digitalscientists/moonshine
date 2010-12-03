@@ -285,10 +285,8 @@ CustomLog /var/log/apache2/other_vhosts_access.log vhost_combined
 Include /etc/apache2/conf.d/
 
 # Include the virtual host configurations:
-Include /etc/apache2/sites-enabled/
-
-# Catch-all
 NameVirtualHost *:80
 <% if configuration[:ssl] %>
 NameVirtualHost *:433
 <% end %>
+Include /etc/apache2/sites-enabled/
