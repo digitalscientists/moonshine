@@ -149,7 +149,7 @@
 </VirtualHost>
 
 <% if configuration[:ssl] %>
-<VirtualHost <%= configuration[:ssl][:ip] || '_default_' %>:443>
+<VirtualHost *:443>
   RequestHeader set X_FORWARDED_PROTO "https"
 
   SSLEngine on
